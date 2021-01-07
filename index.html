@@ -1,11 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eugeny Bondarenko Portfolio Page</title>
+    <script src="https://kit.fontawesome.com/7098966e02.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/scripts.js"></script>
 </head>
+
 <body>
-    <h1>Hello, World!</h1>
+    <header>
+        <div>
+            <h1>Eugeny Bondarenko</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#career">Career</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section id="about-me">
+            <img src="img/photo.png" />
+            <div>
+                <h2>About Me</h2>
+                <p>Hello! My name is Eugeny Bondarenko. I'm 34 years old and I'm living in Novosibirks, Russia. I'm web and hybrid mobile apps developer since 2006.</p>
+                <p class="contact-me"><a href="mailto:eugeny.bondarenko@gmail.com"><i class="fas fa-envelope"></i>&nbsp;eugeny.bondarenko@gmail.com</a></p>
+                <p class="contact-me"><a href="tel:+"><i class="fas fa-phone"></i>&nbsp;+7 (913) 480-3833</a></p>
+                <p class="contact-me"><a href="skype:eugeny.bondarenko"><i class="fab fa-skype"></i>&nbsp;eugeny.bondarenko</a></p>
+                <p class="contact-me"><a class="btn" href="files/Eugeny_Bondarenko_CV_2021.pdf"><i class="fas fa-arrow-down"></i>&nbsp;Download CV</a></p>
+        </section>
+        <section id="career">
+            <h2>Career</h2>
+            <ul>
+                <li>
+                    <div class="content-info">
+                        <h3>Senior Developer <span>e2e4</span></h3>
+                        <time datetime="2015-01-15">January 2015</time><span class="time-dash"> &ndash; </span><time datetime="2020-12-22">December 2020</time>
+                    </div>
+                    <div class="content-details">
+                        <p>Developing web and mobile apps on AngularJS, Angular, Ionic Framework.</p>
+                        <p>Leading teams of developers and managing projects. Communicating with clients, search new clients over elance/upwork, collecting software requirements and working on software specifications.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content-info">
+                        <h3>Developer <span>e2e4</span></h3>
+                        <time datetime="2009-06-09">June 2009</time><span class="time-dash"> &ndash; </span><time datetime="2014-03-09">March 2014</time>
+                    </div>
+                    <div class="content-details">
+                        <p>Developing sites on CakePHP, Bitrix CMS, wordpress and other solutions such like prestashop, opencart, etc.</p>
+                        <p>Leading teams of developers and managing projects. Communicating with clients, search new clients over elance/upwork, collecting software requirements and working on software specifications.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content-info">
+                        <h3>Developer <span>BCS-IT</span></h3>
+                        <time datetime="2007-06-01">June 2007</time><span class="time-dash"> &ndash; </span><time datetime="2008-02-29">February 2008</time>
+                    </div>
+                    <div class="content-details">
+                        <p>Developing sites on CakePHP and Bitrix CMS. Crossbrowser markup and building sites on inner CMS.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content-info">
+                        <h3>Junior Developer <span>BCS-IT</span></h3>
+                        <time datetime="2006-12-24">December 2006</time><span class="time-dash"> &ndash; </span><time datetime="2007-05-31">May 2007</time>
+                    </div>
+                    <div class="content-details">
+                        <p>Developing of PetOnTour site on CakePHP 1.1.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <h3>Higher College of Informatics, Novosibirsk State University <span>Associate's degree</span></h3>
+                    <time datetime="2003-09-01">September 2003</time><span class="time-dash"> &ndash; </span><time datetime="2007-06-31">June 2007</time>
+                    <p>The software of computers and automated systems</p>
+                </li>
+            </ul>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <ul>
+                <li class="ngx-zrs">
+                    <h3>ngx-zrs</h3>
+                    <div class="portfolio-card">
+                        <p class="title">ngx-zrs</p>
+                        <time datetime="2020-10-12">October 2020</time><span class="time-dash"> &ndash; </span><time datetime="2020-12-22">December 2020</time>
+                        <p><strong>Stack:</strong> Angular 10, SCSS, HighChart/HighStock</p>
+                        <p>Rewrite Quote Monitor from ZRSA on new Angular.</p>
+                        <div class="gallery">
+                            <div class="page">
+                                <h4></h4>
+                                <img src="" />
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="gotobutterflly">
+                    <h3>Go to Butterflly</h3>
+                    <div class="portfolio-card">
+                        <p class="title">Go to Butterflly</p>
+                        <time datetime="">April 2020</time><span class="time-dash"> &ndash; </span><time datetime="">September 2020</time>
+                        <p><strong>Stack:</strong> Ionic 5, Angular 8, SmileCDR FHIR, HAPI FHIR, Strapi.io</p>
+                        <p>Mobile and Web Behavioral Health Application Using FHIR</p>
+                        <div class="gallery">
+                            <div class="page">
+                                <h4>Home Page</h4>
+                                <img src="" />
+                                <p>Home page with user posts feed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="cdiac">
+                    <h3>CDIAC</h3>
+                    <div class="portfolio-card">
+                        <p class="title">CDIAC</p>
+                        <time datetime="">October 2019</time><span class="time-dash"> &ndash; </span><time datetime="">January 2020</time>
+                        <p><strong>Stack:</strong> Ionic 5, Angular 8, SCSS, Epub.js, wordpress</p>
+                        <p>California Debt Financing Guide for The California Debt and Investment Advisory Commission</p>
+                        <div class="gallery">
+                            <div class="page">
+                                <h4></h4>
+                                <img src="" />
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="tracking-platform">
+                    <h3>Tracking Platform</h3>
+                    <div class="portfolio-card">
+                        <p class="title">Tracking Platform</p>
+                        <time datetime="2018-04-20">April 2018</time><span class="time-dash"> &ndash; </span><time datetime="2020-12-22">December 2020</time>
+                        <p><strong>Stack:</strong> Ionic 1, AngularJS 1.5, Leaflet.js, PHP 7.3, MySQL 5.6, jQuery</p>
+                        <p>Mobile apps and sites for Tracking Platform and TrackerWay - solutions for GPS tracking and monitoring cars and trucks and other devices.</p>
+                        <div class="gallery">
+                            <div class="page">
+                                <h4></h4>
+                                <img src="" />
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="carehub">
+                    <h3>Our CareHub</h3>
+                    <div class="portfolio-card">
+                        <p class="title">Our CareHub</p>
+                        <time datetime="2016-12-20">December 2016</time><span class="time-dash"> &ndash; </span><time datetime="2019-06-04">June 2019</time>
+                        <p><strong>Stack:</strong> Ionic 2/3, Angular 2/3/4/5, SCSS, Dreamfactory 2, HAPI FHIR, Twillio, AWS SNS</p>
+                        <p>Our CareHub brings together a “patient’s circle of care”: doctors, nurses, caregivers in a HIPAA compliant way, “a social collaboration network”.</p>
+                        <div class="gallery">
+                            <div class="page">
+                                <h4></h4>
+                                <img src="" />
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="rob-kub-khao">
+                    <h3>Rob-Kub-Khao</h3>
+                    <div class="portfolio-card">
+                        <p class="title">Rob-Kub-Khao</p>
+                        <time datetime="2016-03-30">March 2016</time><span class="time-dash"> &ndash; </span><time datetime="2016-12-14">December 2016</time>
+                        <p><strong>Stack:</strong> Ionic 1, AngularJS 1.5, PrestShop</p>
+                        <p>E-commerce service for local small food shops to sell and delivery products to local customers.</p>
+                        <div class="gallery">
+                            <div class="page">
+                                <h4></h4>
+                                <img src="" />
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="zrsa">
+                    <h3>ZRSA (Zacks Advisor Tools)</h3>
+                    <div class="portfolio-card">
+                        <p class="title">ZRSA (Zacks Advisor Tools)</p>
+                        <time datetime="2016-04-04">April 2016</time><span class="time-dash"> &ndash; </span><time datetime="2019-09-27">September 2019</time>
+                        <p><strong>Stack:</strong> AngularJS 1.5, Twitter Bootstrap 3, jQuery, HighCharts/HighStock, Gulp</p>
+                        <p>Tools for Zacks Advisor: Quote Monitor, Fundamental Chart, Performance Chart, etc</p>
+                        <div class="gallery">
+                            <div class="page">
+                                <h4></h4>
+                                <img src="" />
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="lanepass">
+                    <h3>Lanepass</h3>
+                    <div class="portfolio-card">
+                        <p class="title">Lanepass</p>
+                        <time datetime="2015-01-29">January 2015</time><span class="time-dash"> &ndash; </span><time datetime="2015-08-22">August 2015</time>
+                        <p><strong>Stack:</strong> CakePHP 2.6.1, PHP 5.3, MySQL 5.1</p>
+                        <p>Car selling service.</p>
+                        <div class="gallery">
+                            <div class="page">
+                                <h4></h4>
+                                <img src="" />
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer></footer>
 </body>
+
 </html>

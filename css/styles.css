@@ -1,0 +1,438 @@
+:root {
+    --primary-color: #282e3e;
+    /*#221c1c;*/
+    /*#000000;*/
+    --secondary-color: #565264;
+    /*#3c3441;*/
+    --additional-color: #102b41;
+    --border-color: #909da7;
+    --sections-border-color: #cdd8e0;
+    --background-color: #fffdff;
+    /*#ffffff;*/
+    --background-color-alpha: #fffdffee;
+
+    --padding-half: 6px;
+    --padding-1: 12px;
+    --padding-2: calc(2 * var(--padding-1));
+    --padding-3: calc(3 * var(--padding-1));
+    --padding-4: calc(4 * var(--padding-1));
+    --padding-minus-1: calc(-1 * var(--padding-1));
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--primary-color);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li .content-info {
+    flex-basis: 25%;
+    padding-bottom: var(--padding-1);
+}
+
+li .content-details {
+    flex-basis: calc(75% + var(--padding-1));
+    margin-right: var(--padding-minus-1);
+    border-bottom: 1px solid var(--sections-border-color);
+    padding-bottom: var(--padding-1);
+}
+
+li:last-child .content-details {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+header>div,
+main,
+footer {
+    margin: 0 auto;
+    display: flex;
+}
+
+header,
+footer {
+    justify-content: space-between;
+    padding: 0 var(--padding-1);
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h3 span {
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+header {
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+    padding-top: var(--padding-2);
+    padding-bottom: var(--padding-2);
+}
+
+header>div {
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+    text-transform: uppercase;
+    color: var(--additional-color);
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    padding: 0 12px;
+}
+
+header li:last-child {
+    padding-right: 0;
+}
+
+header a {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--additional-color);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+main {
+    flex-direction: column;
+}
+
+main>section {
+    border-bottom: 1px solid var(--sections-border-color);
+    padding: var(--padding-3) var(--padding-1);
+    margin: 0 var(--padding-minus-1);
+}
+
+main>section h2 {
+    font-size: 26px;
+    margin: 0px;
+    margin-bottom: var(--padding-2);
+    text-transform: uppercase;
+    color: var(--additional-color);
+}
+
+main section h3 {
+    margin: var(--padding-1) 0;
+    margin-bottom: 0;
+    line-height: 20px;
+}
+
+main>section time {
+    font-style: italic;
+}
+
+main>section time,
+main>section .time-dash {
+    color: var(--secondary-color);
+    font-size: 16px;
+    line-height: 18px;
+}
+
+main>section p {
+    margin: var(--padding-1) 0;
+}
+
+main section li {
+    padding-bottom: var(--padding-1);
+}
+
+main section#about-me {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main section#about-me h2 {
+    flex: 0 0 100%;
+}
+
+main section#about-me div {
+    flex-basis: calc(75% - var(--padding-4));
+    padding-left: var(--padding-4);
+}
+
+main section#about-me p.contact-me {
+    display: flex;
+    flex: 0 0 100%;
+}
+
+main section#about-me a,
+main section#about-me a:hover {
+    color: var(--secondary-color);
+    font-size: 18px;
+    padding: 0;
+}
+main section#about-me a i {
+    padding-right: var(--padding-1);
+    color: var(--additional-color);
+}
+main section#about-me a.btn {
+    display: inline-block;
+    color: var(--background-color);
+    background-color: var(--additional-color);
+    border: 1px solid var(--additional-color);
+    padding: var(--padding-1) var(--padding-2);
+}
+main section#about-me a.btn i {
+    color: var(--background-color);
+}
+
+
+main section#about-me img {
+    flex-basis: 25%;
+    border-radius: 50%;
+    height: 100%;
+}
+
+main section#about-me li {
+    margin-bottom: 6px;
+}
+
+main section#career h2 {
+    margin-bottom: var(--padding-1);
+}
+
+main section#career h3 {
+    margin-top: var(--padding-1);
+    line-height: 32px;
+}
+
+main section#career h3 span {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+main section#career li {
+    display: flex;
+}
+
+main section#education h3 span {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+main section#portfolio li {
+    background-image: url(../img/no_image_available.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: var(--padding-1);
+    padding: var(--padding-1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--sections-border-color);
+}
+
+main section#portfolio li h3 {
+    position: absolute;
+    display: flex;
+    visibility: visible;
+    margin: 0;
+    padding: var(--padding-2);
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+main section#portfolio li:hover h3 {
+    display: none;
+    visibility: hidden;
+}
+
+main section#portfolio li.ngx-zrs {
+    background-image: url(../img/gallery/ngx-zrs/preview.png);
+}
+
+main section#portfolio li.gotobutterflly {
+    background-image: url(../img/gallery/gotobutterflly/preview.png);
+}
+
+main section#portfolio li.gotobutterflly h3 {
+    display: none;
+    visibility: hidden;
+}
+
+main section#portfolio li.cdiac {
+    background-image: url(../img/gallery/cdiac/preview.jpg);
+}
+
+main section#portfolio li.cdiac h3 {
+    display: none;
+    visibility: hidden;
+}
+
+main section#portfolio li.tracking-platform {
+    background-image: url(../img/gallery/tracking-platform/preview.png);
+}
+
+main section#portfolio li.tracking-platform h3 {
+    display: none;
+    visibility: hidden;
+}
+
+main section#portfolio li.carehub {
+    background-image: url(../img/gallery/carehub/preview.png);
+}
+
+main section#portfolio li.carehub h3 {
+    display: none;
+    visibility: hidden;
+}
+
+main section#portfolio li.rob-kub-khao {
+    background-image: url(../img/gallery/rob-kub-khao/preview.png);
+}
+
+main section#portfolio li.zrsa {
+    background-image: url(../img/gallery/zrsa/preview.png);
+}
+
+main section#portfolio li.zrsa h3 {
+    display: none;
+    visibility: hidden;
+}
+
+main section#portfolio li.lanepass {
+    background-image: url(../img/gallery/lanepass/preview.jpg);
+}
+
+main section#portfolio li.lanepass h3 {
+    display: none;
+    visibility: hidden;
+}
+
+main section#portfolio li div.portfolio-card {
+    display: none;
+    visibility: hidden;
+}
+
+main section#portfolio li div.portfolio-card p {
+    font-size: 16px;
+    line-height: 28px;
+}
+main section#portfolio li div.portfolio-card p.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 20px;
+}
+
+main section#portfolio li:hover div.portfolio-card {
+    margin: var(--padding-minus-1);
+    padding: var(--padding-1);
+    height: 100%;
+    width: calc(100% + var(--padding-2));
+    background-color: var(--background-color-alpha);
+    display: block;
+    visibility: visible;
+    overflow: hidden;
+}
+
+main section#portfolio div.gallery {
+    display: none;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+
+    header,
+    main,
+    footer {
+        width: 100%;
+        padding: var(--padding-1);
+    }
+
+    img {
+        width: calc(100vw - var(--padding-2));
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    header>div,
+    main,
+    footer {
+        width: 600px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    header>div,
+    main,
+    footer {
+        width: 768px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    header>div,
+    main,
+    footer {
+        width: 992px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    header>div,
+    main,
+    footer {
+        width: 1200px;
+    }
+
+    #about-me img {
+        width: 25%;
+    }
+
+    #portfolio ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #portfolio li {
+        flex-basis: calc(33.333333% - var(--padding-4) - 2px);
+        height: 330px;
+    }
+
+    #portfolio li img {
+        width: 100%;
+    }
+}
