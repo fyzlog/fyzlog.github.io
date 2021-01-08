@@ -16,6 +16,7 @@
     --padding-2: calc(2 * var(--padding-1));
     --padding-3: calc(3 * var(--padding-1));
     --padding-4: calc(4 * var(--padding-1));
+    --padding-6: calc(6 * var(--padding-1));
     --padding-minus-1: calc(-1 * var(--padding-1));
 }
 
@@ -197,10 +198,12 @@ main section#about-me a:hover {
     font-size: 18px;
     padding: 0;
 }
+
 main section#about-me a i {
     padding-right: var(--padding-1);
     color: var(--additional-color);
 }
+
 main section#about-me a.btn {
     display: inline-block;
     color: var(--background-color);
@@ -208,6 +211,7 @@ main section#about-me a.btn {
     border: 1px solid var(--additional-color);
     padding: var(--padding-1) var(--padding-2);
 }
+
 main section#about-me a.btn i {
     color: var(--background-color);
 }
@@ -346,6 +350,7 @@ main section#portfolio li div.portfolio-card p {
     font-size: 16px;
     line-height: 28px;
 }
+
 main section#portfolio li div.portfolio-card p.title {
     font-size: 20px;
     font-weight: bold;
@@ -371,68 +376,252 @@ main section#portfolio div.gallery {
 
 @media only screen and (max-width: 600px) {
 
+    html,
+    body {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
     header,
     main,
     footer {
-        width: 100%;
+        width: calc(100% - var(--padding-2));
         padding: var(--padding-1);
     }
 
-    img {
-        width: calc(100vw - var(--padding-2));
+    header nav {
+        display: none;
+        visibility: hidden;
+    }
+
+    main section {
+        padding-top: var(--padding-1);
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main section#about-me img {
+        flex-basis: auto;
+        width: 75vw;
+    }
+
+    main section#about-me div {
+        flex-basis: auto;
+        padding-left: 0;
+        margin-top: var(--padding-2);
+    }
+
+    main section#career li {
+        flex-flow: column;
+    }
+
+    main section#career div.content-info {
+        flex-basis: 25%;
+    }
+
+    main section#career div.content-details {
+        flex-basis: 75%;
+        margin-right: 0;
+    }
+
+    main section#portfolio li {
+        height: 50vw;
+        margin: var(--padding-1) 0;
     }
 }
 
 @media only screen and (min-width: 600px) {
 
-    header>div,
+    header {
+        width: 100%;
+    }
+
     main,
     footer {
-        width: 600px;
+        width: calc(600px - var(--padding-2));
+        padding: var(--padding-1);
+    }
+
+    header>div {
+        width: calc(600px - var(--padding-4));
+    }
+
+    header nav {
+        display: none;
+        visibility: hidden;
+    }
+
+    main section {
+        padding-top: var(--padding-1);
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main section#about-me img {
+        flex-basis: auto;
+        width: 50vw;
+    }
+
+    main section#about-me div {
+        flex-basis: auto;
+        padding-left: 0;
+        margin-top: var(--padding-2);
+    }
+
+    main section#career li {
+        flex-flow: column;
+    }
+
+    main section#career div.content-info {
+        flex-basis: auto;
+    }
+
+    main section#career div.content-details {
+        flex-basis: auto;
+        margin-right: 0;
+    }
+
+    main section#portfolio li {
+        height: 50vw;
+        margin: var(--padding-1) 0;
     }
 }
 
 @media only screen and (min-width: 768px) {
 
-    header>div,
+    html,
+    body {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    header {
+        width: calc(100% - var(--padding-2));
+    }
+
     main,
     footer {
-        width: 768px;
+        width: calc(768px - var(--padding-4));
+        padding: var(--padding-1) var(--padding-2);
+    }
+
+    header>div {
+        width: calc(768px - var(--padding-4));
+        padding: 0 var(--padding-1);
+        margin: 0;
+    }
+
+    main section#portfolio ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main section#portfolio li {
+        flex-basis: calc(50% - var(--padding-4) - 2px);
+        height: 50vw;
+        margin: var(--padding-1);
     }
 }
 
 @media only screen and (min-width: 992px) {
 
-    header>div,
+    header {
+        width: calc(100% - var(--padding-2));
+    }
+
     main,
     footer {
-        width: 992px;
+        width: calc(992px - var(--padding-2));
+        padding: var(--padding-1);
+    }
+
+    header>div {
+        width: calc(992px - var(--padding-4));
+        padding: 0 var(--padding-1);
+        margin: 0;
+    }
+
+    header nav {
+        display: block;
+        visibility: visible;
+    }
+
+    main section {
+        padding-top: var(--padding-2);
+        flex-flow: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    main section#about-me img {
+        width: 25%;
+    }
+
+    main section#about-me div {
+        flex-basis: calc(75% - var(--padding-4));
+        padding-left: var(--padding-4);
+        margin-top: 0;
+    }
+
+    main section#career li {
+        flex-flow: row;
+    }
+
+    main section#career div.content-info {
+        flex-basis: 25%;
+    }
+
+    main section#career div.content-details {
+        flex-basis: calc(75% + var(--padding-1));
+        margin-right: var(--padding-minus-1);
+    }
+
+    main section#portfolio ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main section#portfolio li {
+        flex-basis: calc(33.333333% - var(--padding-4) - 2px);
+        height: 25vw;
+        margin: var(--padding-1);
     }
 }
 
 @media only screen and (min-width: 1200px) {
 
-    header>div,
-    main,
-    footer {
-        width: 1200px;
+    header {
+        width: calc(100% - var(--padding-2));
     }
 
-    #about-me img {
+    main,
+    footer {
+        width: calc(1200px - var(--padding-2));
+        padding: var(--padding-1);
+    }
+
+    header>div {
+        width: calc(1200px - var(--padding-2));
+        margin: 0 auto;
+    }
+
+    main section#about-me img {
         width: 25%;
     }
 
-    #portfolio ul {
+    main section#portfolio ul {
         display: flex;
         flex-wrap: wrap;
     }
 
-    #portfolio li {
+    main section#portfolio li {
         flex-basis: calc(33.333333% - var(--padding-4) - 2px);
         height: 330px;
     }
 
-    #portfolio li img {
+    main section#portfolio li img {
         width: 100%;
     }
 }
